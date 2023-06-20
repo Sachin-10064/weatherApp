@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;   
+        }
+        body{
+            background-image: url(./img1.jpg);
+            background-size:cover;
+            /* background-repeat: no-repeat; */
+        }
+        .card{
+            text-align: center;
+            width: 400px;
+            height: 500px;
+            box-shadow: 1px 1px 20px 20px;
+            margin: auto;
+            padding: 10px;
+            margin-top: 5%;
+            color: #fff;
+        }
+        #city{
+            margin: 5px;
+            background-color: transparent;
+            border: 2px solid gray;
+            border-radius:4px ;
+            color: #fff;
+            padding: 4px;
+        }
+        #weather_icon{
+            margin-top: 20px;
+            width: 240px;
+        }
+        #temp{
+            font-size: 6rem;
+            font-weight: bolder;
+        }
+        #cityname{
+            font-size: 2rem;
+        }
+        #WeatherText{
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Weather App</h1>
+
+        <input type="text" id="city" onblur="city(this.value)" value="raebareli"><br>
+
+        <p id="cityname"></p>
+
+        <img id="weather_icon" src="./cloudy.png" alt="">
+        <p id="WeatherText"></p>
+
+        <p id="temp"></p>
+
+        <!-- <h1 id="temp"></h1> -->
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
